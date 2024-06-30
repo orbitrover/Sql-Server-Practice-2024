@@ -1,9 +1,21 @@
-# Sql-Practice-2024
-Complete Sql Server Workflow Practice
+# Sql-Server-Practice-2024
+This Practice baseed on Sql Server Version 2022 or earlier versions
+I'll  try to cover Complete Sql Server Workflow Practice
+
+
 
 ![sql Operatopns](https://github.com/orbitrover/Sql-Practice-2024/assets/8413437/bc669a0e-4ac0-4259-ae45-0d78e53e3106)
 
-    --Create Database EmployeeDB
+    ---DDL
+    Create Database SampleDB;
+    
+    --DDL
+    ---Run This Command if multiple use is accessing the same database and drop common refuse the droping DB
+    Alter Database SampleDB Set SINGLE_USER With Rollback Immediate
+    
+    ---DDL
+    ---Use For Drop Database
+    Drop Database SampleDB;
     
     Use EmployeeDB
     Go
